@@ -576,6 +576,14 @@ img {
 	margin-bottom: 5rem;
 }
 
-li {
+.container li {
 	margin-bottom: 1rem;
+}
+
+.nav li {
+	margin-bottom: 0rem;
+}
+
+details {
+	margin-bottom: 2rem;
 }
