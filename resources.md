@@ -5,22 +5,15 @@ layout: default
 
 # Resources
 
-<hr>
-
-### REFERENCES AND DOWNLOADS
-
 ## Class Presentations
 
 -   [Link to Box](https://cisco.box.com/s/htxba0p706e335zskbixm0244aysjz9w)
 
 ## Metasploitable
 
-The Metasploitable virtual machine is an intentionally vulnerable
-version of Ubuntu Linux designed for testing security tools and
-demonstrating common vulnerabilities.
+The Metasploitable virtual machine is an intentionally vulnerable version of Ubuntu Linux designed for testing security tools and demonstrating common vulnerabilities.
 
-The applications are installed in Metasploitable 2 in
-the /var/www directory.
+The applications are installed in Metasploitable 2 in the `/var/www` directory.
 
 In the current version as of this writing, the applications are:
 
@@ -47,8 +40,7 @@ In the current version as of this writing, the applications are:
 
 ## The Art of Hacking GitHub repository
 
-Over 6000 resources related to ethical hacking/pen testing, DFIR, vuln
-research, exploit development, and reverse engineering:
+Over 6000 resources related to ethical hacking/pen testing, DFIR, vuln research, exploit development, and reverse engineering:
 
 - <https://theartofhacking.org/github>
 
@@ -60,8 +52,7 @@ WebSploit Labs is a learning environment created by Omar Santos for different Cy
 
 ## Shameless Plug
 
-- [The Art of Hacking Series (Offensive Security Video on
-    Demand)](https://theartofhacking.org)
+- [The Art of Hacking Series (Offensive Security Video on Demand)](https://theartofhacking.org)
 
 ## Other Resources
 
