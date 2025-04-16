@@ -7,7 +7,13 @@ layout: default
 
 ## Class Presentations
 
--   [Link to Box](https://cisco.box.com/s/htxba0p706e335zskbixm0244aysjz9w)
+- [Introduction](https://storage.googleapis.com/bah-public/presentations/introduction.pdf)
+- [Passive Reconnaissance](https://storage.googleapis.com/bah-public/presentations/passive-recon.pdf)
+- [Active Reconnaissance](https://storage.googleapis.com/bah-public/presentations/active-recon.pdf)
+- [Networking](https://storage.googleapis.com/bah-public/presentations/networking.pdf)
+- [Wireless](https://storage.googleapis.com/bah-public/presentations/wireless.pdf)
+- [Web Apps](https://storage.googleapis.com/bah-public/presentations/web-apps.pdf)
+- [Link to Box (Cisco Only)](https://cisco.box.com/s/htxba0p706e335zskbixm0244aysjz9w)
 
 ## Metasploitable
 
