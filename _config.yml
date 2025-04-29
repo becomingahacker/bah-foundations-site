@@ -14,5 +14,9 @@ defaults:
     values:
       layout: "default"
 
+tailwindcss:
+  css_path: "./_tailwind.css" # this is the default location
+
 exclude:
   ['README.md', 'Gemfile.lock', 'Gemfile', 'non-published']
+

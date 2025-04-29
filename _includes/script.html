@@ -1,6 +1,5 @@
 <script src={{ "/os_files/jquery.min.js" | relative_url }}></script>
 <script src={{ "/os_files/bootstrap.min.js" | relative_url }}></script>
-<!-- <script src={{ "/static/js/ZeroClipboard.js" | relative_url }} type="text/javascript"></script> -->
 <script src={{ "/os_files/highlight.pack.js" | relative_url }}></script>
 <script type="text/javascript" src={{ "/os_files/sijax.js" | relative_url }}></script>
 <script type="text/javascript" src={{ "/os_files/cssterm.js" | relative_url }}></script>
@@ -24,17 +23,6 @@
 			while (match = search.exec(query))
 				urlParams[decode(match[1])] = decode(match[2]);
 	})();
-
-	// Config ZeroClipboard
-	//ZeroClipboard.config({
-	//    hoverClass: 'btn-clipboard-hover'
-	//})
-
-	// Insert copy to clipboard button before .ciscohl
-	//$('.ciscohl').each(function () {
-	//    var btnHtml = '<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>';
-	//    $(this).before(btnHtml)
-	//});
 
 	function runit(codeid){
 			var codeblock = "codeblock-" + codeid;
@@ -137,10 +125,34 @@
 	///////////////////////////////////////////////////////////////////////////////
 	// End COPY/PASTE Clipboard code.
 	///////////////////////////////////////////////////////////////////////////////
-
-
+	//https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText
+	async function writeClipboardText(ele, text) {
+  	try {
+    	await navigator.clipboard.writeText(text);
+  		console.log("Copied!");
+  		ele.textContent = "copied";
+  		window.setTimeout((() => ele.textContent = "copy"), 1000);
+  	} catch (error) {
+    	console.error(error.message);
+  	}
+	}
 
 	$(document).ready(function(){
+
+		codeBlocks = document.querySelectorAll("pre");
+		for (let i = 0; i < codeBlocks.length; ++i) {
+			let myp = document.createElement("p");
+			let myclasses = ["tw:m-0", "tw:flex", "tw:justify-end", "tw:text-end", "tw:text-white", "tw:text-sm", "tw:cursor-pointer", "tw:select-none"];
+			for (let j = 0; j < myclasses.length; ++j) {
+				myp.classList.add(myclasses[j]);
+			}
+			myp.textContent = "copy";
+			myp.addEventListener('click', function() {
+				writeClipboardText(this, this.parentElement.querySelector('code').textContent);
+			});
+			codeBlocks[i].prepend(myp);
+		}
+
 		// cache the window object
 		$window = $(window);
 
