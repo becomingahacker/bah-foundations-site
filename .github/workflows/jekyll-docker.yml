@@ -8,13 +8,22 @@ on:
 
 jobs:
   build:
-
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the site in the jekyll/builder container
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Ruby 3.4.x
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.4'
+
+    - name: Install dependencies
       run: |
-        docker run \
-        --platform linux/arm64 -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jvconseil/jekyll-docker:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+        gem install bundler
+        bundle config set --local path vendor/bundle
+        bundle install
+
+    - name: Build the Jekyll site
+      run: bundle exec jekyll build --future
