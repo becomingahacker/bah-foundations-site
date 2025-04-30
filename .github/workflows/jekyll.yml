@@ -33,6 +33,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install Bundler
+        run: |
+          sudo gem install bundler
+      - name: Install dependencies
+        run: |
+          bundle config set --local path vendor/bundle
+          bundle install
+      - name: Build the Jekyll site
+        run: bundle exec jekyll build --future
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
