@@ -14,14 +14,24 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Ruby 3.4.x
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.4'
+    - name: Install Ruby 3.4
+      run: |
+        sudo apt-get update
+
+        # Install Ruby 3.4
+        sudo apt-get install -y ruby3.4 ruby3.4-dev
+
+    - name: Verify Ruby installation
+      run: |
+        which ruby
+        ruby -v
+
+    - name: Install Bundler
+      run: |
+        sudo gem install bundler
 
     - name: Install dependencies
       run: |
-        gem install bundler
         bundle config set --local path vendor/bundle
         bundle install
 
