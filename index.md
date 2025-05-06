@@ -19,21 +19,25 @@ This training contains materials that can be potentially damaging or dangerous. 
 
 | Start | End   | Module | Content                |
 |-------|-------|--------|------------------------|
-| 09:00 | 10:00 | 1      | Introduction           |
-| 10:00 | 11:00 | 2      | Passive Reconnaissance |
-| 11:00 | 12:30 | 3      | Active Reconnaissance  |
-| 12:30 | 13:30 |        | *Lunch*                |
-| 13:30 | 15:30 | 4      | Networking             |
+| 10:00 | 11:00 | 1      | Introduction           |
+| 11:00 | 12:00 | 2      | Passive Reconnaissance |
+| 12:00 | 13:00 |        | *Lunch*                |
+| 13:00 | 14:30 | 3      | Active Reconnaissance  |
+| 14:30 | 14:45 |        | *Break*                |
+| 14:45 | 15:45 | 4      | Networking             |
+| 15:45 | 16:00 |        | *Break*                |
+| 16:00 | 17:00 | 4      | Networking (cont.)     |
 
 ### Day 2
 
 | Start | End   | Module | Content              |
 |-------|-------|--------|----------------------|
-| 09:00 | 11:00 | 5      | Wireless             |
-| 11:00 | 12:30 | 6      | Web Applications     |
+| 10:00 | 11:30 | 5      | Wireless             |
+| 11:45 | 12:30 | 6      | Web Applications     |
 | 12:30 | 13:30 |        | *Lunch*              |
 | 13:30 | 14:30 | 6      | Web Applications     |
-| 14:30 | 15:30 | 7      | Accounts & Passwords |
+| 14:30 | 14:45 |        | *Break*              |
+| 14:45 | 16:00 | 7      | Accounts & Passwords |
 
 ## Labs
 
