@@ -12,12 +12,10 @@
 	{% if prev > 1 %}
 	<div style="float:left; font-size: .9em;">
 		<div class="btn-group">
-			<a href={{ prevlink }}>
-				<button type="button" class="btn btn-md btn-success">
+				<a href={{ prevlink }} type="button" class="btn btn-md btn-success">
 					<span class="glyphicon glyphicon-chevron-left" style="color:white;" aria-hidden="true"></span>
-				</button>
-				<button type="button" class="btn btn-md btn-success">Previous: Module {{ prev }}</button>
-			</a>
+					Previous: Module {{ prev }}
+				</a>
 		</div>
 	</div>
 	{% endif %}
@@ -25,11 +23,8 @@
 	{% if next < 9 %}
 	<div style="float:right; font-size: .9em;">
 		<div class="btn-group">
-			<a href={{ nextlink }}>
-				<button type="button" class="btn btn-md btn-success">Next: Module {{ next }}</button>
-				<button type="button" class="btn btn-md btn-success">
-					<span class="glyphicon glyphicon-chevron-right" style="color:white;" aria-hidden="true"></span>
-				</button>
+			<a href={{ nextlink }} type="button" class="btn btn-md btn-success">Next: Module {{ next }}
+				<span class="glyphicon glyphicon-chevron-right" style="color:white;" aria-hidden="true"></span>
 			</a>
 		</div>
 	</div>
