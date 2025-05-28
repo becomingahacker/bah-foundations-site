@@ -7,12 +7,24 @@ body {
 
 }
 
+ul {
+    padding-left: 15px;
+}
+
 li {
     list-style-type: disc;
 }
 
+.navbar-nav {
+    padding-left: 0;
+}
+
 .navbar-nav>li {
     list-style-type: none !important;
+}
+
+.multi-column-dropdown{
+    padding-left: 10px;
 }
 
 .multi-column-dropdown>li {
