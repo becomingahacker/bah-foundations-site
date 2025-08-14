@@ -13,7 +13,6 @@ layout: default
 - [Networking](https://storage.googleapis.com/bah-public/presentations/networking.pdf)
 - [Wireless](https://storage.googleapis.com/bah-public/presentations/wireless.pdf)
 - [Web Apps](https://storage.googleapis.com/bah-public/presentations/web-apps.pdf)
-- [Link to Box (Cisco Only)](https://cisco.box.com/s/htxba0p706e335zskbixm0244aysjz9w)
 
 ## Metasploitable
 
